@@ -38,6 +38,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SERVER_SSH_PRYVATE_KEY }}
           script: |
-                  cd ~/staging && docker-compose pull &&\
+                  cd ~/staging && docker-compose -f docker-compose.staging.yml pull &&\
                   make staging_up_and_build_one_service service=front
                  
