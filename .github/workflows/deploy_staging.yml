@@ -3,7 +3,7 @@ name: Deploy-ubuntu
 on:
   push:
     branches:
-      - main
+      - staging
 
 jobs:
   deploy:
