@@ -1,0 +1,34 @@
+.container {
+    width: 212px;
+    height: 220px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.imgBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    border: 2px solid #F1F1F1;
+}
+
+.active {
+    border: 2px solid #4CAF50;
+}
+
+.img {
+    width: 80%;
+    height: auto;
+}

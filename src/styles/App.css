@@ -45,3 +45,12 @@ body {
     align-items: center;
     gap: 20px;
 }
+
+.categoryList{
+    padding: 24px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
