@@ -1,9 +1,12 @@
 import React from "react";
-
+import Header from "./components/Header";
+import "./styles/App.css"
+import NavBar from "./components/NavBar";
 function App() {
   return (
     <div className="App">
-      <h1>Moyo React App</h1>
+      <Header/>
+      <NavBar/>
     </div>
   );
 }

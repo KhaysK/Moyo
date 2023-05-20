@@ -1,0 +1,13 @@
+.navItem{
+    padding: 12px 40px;
+    border-radius: 8px;
+    background-color: #F5F3F8;
+    color: #888888;
+    font-size: 20px;
+}
+
+.active{
+    border: 1px solid #4CAF50;
+    background-color: #fff;
+    color: #000;
+}
