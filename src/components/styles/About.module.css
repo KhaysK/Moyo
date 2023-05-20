@@ -1,0 +1,11 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desription{
+    width: 598px;
+    font-size: 24px;
+    color: #505050;
+}
