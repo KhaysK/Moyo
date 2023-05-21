@@ -1,30 +1,22 @@
 import React from "react";
-import clasess from "./styles/Card.module.css"
-import MyButton from "../UI/button/MyButton";
+import clasess from "./styles/CardPageInfo.module.css";
 
-function Card({ img, name, description, moneyNeed, moneyGot, onCardClick, id, heal}) {
+function CardPageInfo({ name, description, moneyGot, moneyNeed, onCardClick, heal}) {
     const progress = Math.floor((moneyGot / moneyNeed) * 100);
+    
     const handleClick = () => {
-        let data = {
-            id,
-            img, 
-            name, 
-            description, 
-            moneyNeed, 
-            moneyGot,
-            heal
-        }
-        onCardClick(data);
+        onCardClick();
     };
+
     return (
-        <div className={clasess.container}>
-            <div className={clasess.cardImage}>
-                <img src={img} alt={name} />
-            </div>
-            <div className={clasess.innerContainer}>
+        <div>
+            <div className={clasess.container}>
+                <p onClick={handleClick} style={{ fontSize: "32px", alignSelf: "flex-start" }} >Главная/{name}</p>
                 <p className={clasess.cardName}>{name}</p>
                 <p className={clasess.cardTitle} style={{ color: "#B70505" }}>Диагноз:</p>
-                <p className={clasess.cardDescription}>{description}</p>
+                <p className={clasess.cardDescription} style={{ maxHeight: "306px" }}>{description}</p>
+                <p className={clasess.cardTitle} style={{ color: "#B70505" }}>Требуется лечение:</p>
+                <p className={clasess.cardDescription}>{heal}</p>
                 <div className={clasess.cardTitle} style={{ width: "100%", display: 'flex', justifyContent: 'space-between' }}>
                     <span>Пожертвовано</span>
                     <span>{progress}%</span>
@@ -35,11 +27,10 @@ function Card({ img, name, description, moneyNeed, moneyGot, onCardClick, id, he
                         style={{ width: `${progress}%` }}
                     ></div>
                 </div>
-                <p className="card-money-got">Собрано {moneyGot} ₽</p>
-                <MyButton onClick={handleClick}>Хочу помочь</MyButton>
+                <p style={{ fontSize: "32px" }}>Собрано {moneyGot} ₽</p>
             </div>
         </div>
     );
 }
 
-export default Card;
+export default CardPageInfo;

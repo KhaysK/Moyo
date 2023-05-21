@@ -1,0 +1,19 @@
+.container {
+    width: 822px;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.imgBox {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    width: 100%;
+}
+
+.imgBox img{
+    border-radius: 20px;    
+    width: 247px;
+}

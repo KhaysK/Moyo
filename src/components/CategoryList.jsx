@@ -14,9 +14,7 @@ const info = [
     { img: require('../materials/category_10.svg').default, title: 'Помощь школам' },
 ]
 
-function CategoryList() {
-    const [activeIndex, setActiveIndex] = useState(0);
-
+function CategoryList({activeIndex, setActiveIndex}) {
     const handleClick = (index) => {
         setActiveIndex(index);
     };
