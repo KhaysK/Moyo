@@ -11,7 +11,7 @@ function Card({ img, name, description, moneyNeed, moneyGot, onCardClick, id, he
     }, [])
 
     const getData = async () => {
-        const response = await fetch(`https://api.staging.moyo.website/${img}`);
+        const response = await fetch(`https://api.moyo.website/${img}`);
         const blob = await response.blob();
         return URL.createObjectURL(blob);
     }

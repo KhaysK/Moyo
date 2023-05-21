@@ -11,7 +11,7 @@ function CardList({onCardClick, activeIndex }) {
     }, [])
     console.log(data);
     const getData = async () => {
-        const data = await fetch('https://api.staging.moyo.website/posts')
+        const data = await fetch('https://api.moyo.website/posts')
             .then(async (data) => await data.json())
             .catch(console.log)
         return data
