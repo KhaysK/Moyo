@@ -26,7 +26,7 @@ function CardList({onCardClick, activeIndex }) {
                 {filteredData.map(card => (
                     <Card
                         key={card.id}
-                        img={img}
+                        img={card.image}
                         name={card.name}
                         description={card.description}
                         moneyNeed={card.sum}
