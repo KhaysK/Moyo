@@ -18,11 +18,13 @@ function App() {
   const handleCardClick = (card) => {
     setSelectedCard(card);
     setShowCardPage(true);
+    window.scrollTo(0, 0);
   };
 
   const handleGoBack = () => {
     setShowCardPage(false);
     setSelectedCard(null);
+    window.scrollTo(0, 0);
   };
 
   return (

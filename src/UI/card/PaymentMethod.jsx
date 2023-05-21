@@ -1,9 +1,13 @@
 import React from "react";
 import clasess from "./PaymentMethod.module.css"
 
-function PaymentMethod({img}) {
+function PaymentMethod({img, onClick , isActive}) {
+    const handleClick = () => {
+        onClick();
+    };
+    
     return (  
-        <div className={clasess.container}>
+        <div onClick={handleClick} className={`${clasess.container} ${isActive ? clasess.active : ""}`}>
             <div className={clasess.icon}></div>
             <img src={img} alt="payment image" />
         </div>

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import NavBarItem from "../UI/navbar/NavBarItem";
 
-function NavBar() {
+function NavBar({Active}) {
     const [activeIndex, setActiveIndex] = useState(1);
 
     const handleClick = (index) => {
+        Active(index);
         setActiveIndex(index);
     };
 
