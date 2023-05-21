@@ -1,0 +1,30 @@
+.container{
+    padding: 0 16px;
+    width: 184;
+    height: 96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    border: 1px solid #AAAAAA;
+    background-color: #F5F3F8;
+}
+
+.active {
+    border: 1px solid #4CAF50;
+    background-color: #FFFFFF;
+}
+
+.active .icon{
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: 1px solid #AAAAAA;
+    background-color: #F5F3F8;
+}

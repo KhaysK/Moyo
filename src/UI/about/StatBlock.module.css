@@ -1,0 +1,13 @@
+.container{
+    width: 340px;
+    height: 372px;
+    border-radius: 24px;
+    background-color: #F5F3F8;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+    color: #555555;
+}
